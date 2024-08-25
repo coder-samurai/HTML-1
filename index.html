@@ -1,31 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
-    <title>Document</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet'> 
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/2cd88c2a52.js" crossorigin="anonymous"></script>
+    <title>Tasks</title>
 </head>
 
 <body>
-    <div>
-        <h1>Enter the task</h1>
-        <label for="user-input">Task: </label><br>
+    <section class="main">
+        <div class="container">
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="task">    
+                <button onclick="AddTask()" class="submit-button"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            
+            <div class="task-title-container">
+                <h3 class="task-title">Tasks</h3>
+                <hr>
+            </div>
 
-        <input type="text" id="user-input">
-
-        <button onclick="AddTask()">Add task</button>
-        <!--<button onclick="Delete()">Delete</button>!-->
-    </div>
-    <div id="task-container">
-        <div id="ind-task">
-            <h2>Task 1:</h2>
-            <button onclick="DeleteTask(event)">Delete</button>
+            <div id="task-container">
+                <div id="ind-task">
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 </body>
 
 </html>

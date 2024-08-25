@@ -1,10 +1,106 @@
-.para{
-    font-size: larger;
-    color: chartreuse;
-    font-style: oblique;
-    font-weight: 900;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #FFF8E8;
 }
-.one{
-    font-size: 50px;
-    color: blueviolet;
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #F7EED3;
+}
+
+.container {
+    background-color: #AAB396;
+    max-width: 700px;
+    padding: 22px;
+    border-radius: 20px;
+    -webkit-box-shadow: 9px 9px 0px 0px #674636;
+    -moz-box-shadow: 9px 9px 0px 0px #674636;
+    box-shadow: 9px 9px 0px 0px #674636;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#user-input {
+    color: #131414;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#user-input:focus {
+    border: 1px solid #131414;
+    outline: none;
+}
+
+#user-input::placeholder {
+    color: #674636;
+}
+
+.submit-button {
+    background-color: #131414;
+    padding: 5px;
+    border: none;
+    margin-left: 5px;
+    border-radius: 15px;
+}
+
+.task-title-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.task-title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.task-title-container hr {
+    width: 70%;
+    margin: auto;
+}
+
+#task-container {
+    display: block;
+}
+
+#ind-task {
+    display: flex;
+}
+
+.task-content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.task-content {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.delete-button {
+    background-color: #131414;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    color: #f5f5f5;
 }
